@@ -1,54 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 /* styles.css */
+/* Basic reset and body styling */
 body {
-    font-family: "Open Sans", sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    font-family: "Open Sans", sans-serif; /* Set a base font family */
+    background-color: #0000ff; /* Blue background for the page */
+    display: flex; /* Flexbox to center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
 }
 
+/* Container for the quiz */
 .quiz-container {
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    padding: 20px;
-    text-align: center;
+    background: #fff; /* White background for the quiz container */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    width: 400px; /* Fixed width */
+    padding: 20px; /* Padding inside the container */
+    text-align: center; /* Center-align text */
 }
 
+/* Class to hide elements */
 .hidden {
-    display: none;
+    display: none; /* Hide the element */
 }
 
+/* Styling for each option button */
 .option {
-    display: block;
-    background: #e4e4e4;
-    border: none;
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
+    display: block; /* Block level for full width */
+    background: #6649c4; /* Light grey background */
+    border: none; /* No border */
+    margin: 10px 0; /* Margin between options */
+    padding: 10px; /* Padding inside the button */
+    width: 100%; /* Full width */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
 }
 
+/* Hover effect for option buttons */
 .option:hover {
-    background: #ccc;
+    background: #bbb; /* Darker grey on hover */
 }
 
+/* Styling for the selected option */
+.option.selected {
+    background: #a4a4a4; /* Indicate selection with a different background color */
+}
+
+/* Styling for the Next Question button */
 #next-button {
-    background: #28a745;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
+    background: #28a745; /* Green background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    padding: 10px; /* Padding inside the button */
+    width: 100%; /* Full width */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 20px; /* Margin above the button */
 }
 
+/* Hover effect for the Next Question button */
 #next-button:hover {
-    background: #218838;
+    background: #218838; /* Darker green on hover */
 }
