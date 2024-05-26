@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-/* styles.css */
+
 /* Basic reset and body styling */
 body {
     font-family: "Open Sans", sans-serif; /* Set a base font family */
@@ -18,7 +18,8 @@ body {
     background: #fff; /* White background for the quiz container */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    width: 400px; /* Fixed width */
+    width: 80%; /* Set width to 80% */
+    max-width: 400px; /* Maximum width of 400px */
     padding: 20px; /* Padding inside the container */
     text-align: center; /* Center-align text */
 }
@@ -71,18 +72,69 @@ body {
 footer {
     position: absolute; /* Position the footer absolutely */
     width: 100%; /* Full width */
-    left: 5; /* Align to left */
+    left: 0; /* Align to left */
     bottom: 0; /* Align to bottom */
     box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
     min-height: 80px; /* Minimum height */
     padding-top: 5px; /* Vertical padding */
     text-align: center; /* Center text alignment */
     background-color: white; /* Set background color */
-    margin: 0.2%; /* Margin */
+    margin: 0; /* Margin */
 }
 
 .logo {
-    height: 80px;
-    padding-right: 5px;
-    width: 300px;
+    height: 80px; /* Set logo height */
+    width: 100%; /* Set logo width */
+    max-width: 300px; /* Maximum width for the logo */
+    padding-right: 5px; /* Padding on the right */
+}
+
+/* Media queries */
+
+/* Tablet styles (min-width: 768px) */
+@media (min-width: 768px) {
+    .quiz-container {
+        width: 70%; /* Adjust width to 70% for tablets */
+    }
+
+    .logo {
+        max-width: 250px; /* Adjust logo size for tablets */
+    }
+}
+
+/* Desktop styles (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .quiz-container {
+        width: 60%; /* Adjust width to 60% for desktops */
+    }
+
+    .logo {
+        max-width: 200px; /* Adjust logo size for desktops */
+    }
+}
+
+/* Mobile styles (max-width: 767px) */
+@media (max-width: 767px) {
+    .quiz-container {
+        width: 90%; /* Adjust width to 90% for mobiles */
+        padding: 10px; /* Reduce padding for mobiles */
+    }
+
+    .option {
+        margin: 5px 0; /* Reduce margin between options */
+        padding: 8px; /* Reduce padding inside the button */
+    }
+
+    #next-button {
+        padding: 8px; /* Reduce padding inside the button */
+    }
+
+    footer {
+        min-height: 60px; /* Reduce minimum height for footer */
+    }
+
+    .logo {
+        height: 60px; /* Reduce logo height for mobiles */
+        max-width: 200px; /* Adjust logo size for mobiles */
+    }
 }
