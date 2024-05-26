@@ -67,15 +67,22 @@ body {
 #next-button:hover {
     background: #218838; /* Darker green on hover */
 }
+
 footer {
-    position: absolute
-    width: 100%
-    left: 0
-    bottom: 0
-    box-sizzling:border-box
-    min-height: 80px;
-    paddling-top: 5px
-    text-align: center;
-    background-color: white;
-    margin: 0.5%;
+    position: absolute; /* Position the footer absolutely */
+    width: 100%; /* Full width */
+    left: 5; /* Align to left */
+    bottom: 0; /* Align to bottom */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    min-height: 80px; /* Minimum height */
+    padding-top: 5px; /* Vertical padding */
+    text-align: center; /* Center text alignment */
+    background-color: white; /* Set background color */
+    margin: 0.2%; /* Margin */
+}
+
+.logo {
+    height: 80px;
+    padding-right: 5px;
+    width: 300px;
 }
